@@ -4,7 +4,8 @@ package com.chrynan.logger
  * A simple implementation of [Loggable] that performs no action and prints no log when a function is called. This class
  * could be useful to extend if only some functions have to be overridden.
  */
-class NoActionLogger : LogInitializer,
+@Suppress("unused")
+open class NoActionLogger : LogInitializer,
         Loggable {
 
     override fun init() {}
