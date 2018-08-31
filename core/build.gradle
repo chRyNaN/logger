@@ -1,34 +1,32 @@
 group 'com.chrynan'
-version '1.0-SNAPSHOT'
+version Versions.CORE
 
 buildscript {
-    ext.kotlin_version = '1.2.10'
-
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath ClassPath.KOTLIN
     }
 }
 
 apply plugin: 'java'
 apply plugin: 'kotlin'
 
-sourceCompatibility = 1.6
+sourceCompatibility = Versions.JDK_SOURCE_COMPATIBILITY
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile Libraries.KOTLIN_JDK
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = Versions.JDK_COMPATIBILITY
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = Versions.JDK_COMPATIBILITY
 }
