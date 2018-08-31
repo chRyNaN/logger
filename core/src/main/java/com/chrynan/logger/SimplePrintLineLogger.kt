@@ -61,9 +61,9 @@ open class SimplePrintLineLogger : LogInitializer,
     protected fun log(tag: String, message: String? = null, throwable: Throwable? = null) {
         val sb = StringBuilder()
         sb.append("$tag: ")
-        message?.let { sb.append("$MESSAGE: $it: ") }
+        message?.let { sb.append("${MESSAGE}: $it: ") }
         throwable?.let {
-            sb.append("$THROWABLE_MESSAGE: ${it.message}: ")
+            sb.append("${THROWABLE_MESSAGE}: ${it.message}: ")
             sb.append(it)
         }
         println(sb.toString())
