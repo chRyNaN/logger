@@ -59,13 +59,11 @@ open class SimplePrintLineLogger : LogInitializer,
 
     @Suppress("MemberVisibilityCanPrivate")
     protected fun log(tag: String, message: String? = null, throwable: Throwable? = null) {
-        val sb = StringBuilder()
-        sb.append("$tag: ")
-        message?.let { sb.append("${MESSAGE}: $it: ") }
+        var sb = "$tag: "
+        message?.let { sb += "$MESSAGE: $it: " }
         throwable?.let {
-            sb.append("${THROWABLE_MESSAGE}: ${it.message}: ")
-            sb.append(it)
+            sb += "$THROWABLE_MESSAGE: ${it.message}: $it"
         }
-        println(sb.toString())
+        println(sb)
     }
 }
