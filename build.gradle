@@ -1,21 +1,17 @@
-group 'com.chrynan'
-version Versions.CORE
-
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath ClassPath.KOTLIN
-    }
+plugins {
+    id 'kotlin-platform-common' version '1.2.71'
 }
 
-apply plugin: 'kotlin'
+group 'com.chrynan'
+version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile Libraries.KOTLIN
+    compile "org.jetbrains.kotlin:kotlin-stdlib-common"
+
+    testCompile "org.jetbrains.kotlin:kotlin-test-annotations-common"
+    testCompile "org.jetbrains.kotlin:kotlin-test-common"
 }
