@@ -5,6 +5,8 @@ This library provides simple interfaces to wrap any logging utility and use them
 
 ## Using the library
 
+[![](https://jitpack.io/v/chRyNaN/logger.svg)](https://jitpack.io/#chRyNaN/logger)
+
 * Provide the logging implementation extending from the `Loggable` and `LogInitializer` interfaces:
 ```kotlin
 object Logger : LogInitializer,
