@@ -1,0 +1,28 @@
+plugins {
+    id 'kotlin-platform-jvm' version '1.2.71'
+}
+
+group 'com.chrynan'
+version '1.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7"
+    
+    expectedBy(':logger')
+    
+    testCompile "junit:junit:4.12"
+    testCompile "org.jetbrains.kotlin:kotlin-test"
+    testCompile "org.jetbrains.kotlin:kotlin-test-junit"
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.7"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.7"
+}
+sourceCompatibility = "1.7"
