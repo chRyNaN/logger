@@ -12,7 +12,7 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7"
 
-    expectedBy project(':common')
+    expectedBy project(':logger-common')
 
     testCompile "junit:junit:4.12"
     testCompile "org.jetbrains.kotlin:kotlin-test"
