@@ -1,6 +1,5 @@
 apply plugin: 'kotlin'
 apply plugin: 'kotlin-platform-jvm'
-apply plugin: 'maven'
 
 group 'com.chrynan'
 version '1.0.6'

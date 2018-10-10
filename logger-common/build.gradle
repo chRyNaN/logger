@@ -1,5 +1,4 @@
 apply plugin: 'kotlin-platform-common'
-apply plugin: 'maven'
 
 group 'com.chrynan'
 version '1.0.6'
