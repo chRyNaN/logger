@@ -3,7 +3,7 @@ apply plugin: 'kotlin-platform-jvm'
 apply plugin: 'maven'
 
 group 'com.chrynan'
-version '1.0.2'
+version '1.0.3'
 
 repositories {
     mavenCentral()
