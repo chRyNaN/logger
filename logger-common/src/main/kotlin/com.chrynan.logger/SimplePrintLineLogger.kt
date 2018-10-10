@@ -19,7 +19,7 @@ open class SimplePrintLineLogger : LogInitializer,
         private const val THROWABLE_MESSAGE = "Throwable Message"
     }
 
-    override fun init() = log(tag = TAG_INFO, message = "Initializing ${this::class.simpleName}.")
+    override fun init() = log(tag = TAG_INFO, message = "Initializing SimplePrintLineLogger.")
 
     override fun logError(throwable: Throwable, message: String) = log(tag = TAG_ERROR, message = message, throwable = throwable)
 

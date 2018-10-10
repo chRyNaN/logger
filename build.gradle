@@ -1,17 +1,14 @@
-plugins {
-    id 'kotlin-platform-common' version '1.2.71'
-}
-
 group 'com.chrynan'
-version '1.0.1-SNAPSHOT'
+version '1.0.2'
 
-repositories {
-    mavenCentral()
-}
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+    }
 
-dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-common"
-
-    testCompile "org.jetbrains.kotlin:kotlin-test-annotations-common"
-    testCompile "org.jetbrains.kotlin:kotlin-test-common"
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.71"
+    }
 }
