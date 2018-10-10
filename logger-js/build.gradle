@@ -1,0 +1,16 @@
+apply plugin: 'kotlin-platform-js'
+
+group 'com.chrynan'
+version '1.0.5'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-js"
+
+    expectedBy project(':logger-common')
+
+    testCompile "org.jetbrains.kotlin:kotlin-test-js"
+}

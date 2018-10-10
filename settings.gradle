@@ -1,3 +1,4 @@
 rootProject.name = 'logger'
 include 'logger-common'
 include 'logger-jvm'
+include 'logger-js'
