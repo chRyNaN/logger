@@ -1,3 +1,6 @@
+group 'com.chrynan'
+version '1.0.2'
+
 buildscript {
     repositories {
         mavenCentral()
