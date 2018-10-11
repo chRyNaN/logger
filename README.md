@@ -19,6 +19,14 @@ implementation 'com.github.chRyNaN.logger:logger-jvm:VERSION'
 ```
 implementation 'com.github.chRyNaN.logger:logger-js:VERSION'
 ```
+**Android Project:**
+```
+implementation 'com.github.chRyNaN.logger:logger-android:VERSION'
+```
+**Android Project using Timber Library:**
+```
+implementation 'com.github.chRyNaN.logger:logger-timber:VERSION'
+```
 
 * Provide the logging implementation extending from the `Loggable` and `LogInitializer` interfaces:
 ```kotlin
