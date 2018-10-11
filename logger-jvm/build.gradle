@@ -2,7 +2,7 @@ apply plugin: 'kotlin'
 apply plugin: 'kotlin-platform-jvm'
 
 group 'com.chrynan'
-version '1.0.9'
+version rootProject.ext.libraryVersion
 
 repositories {
     mavenCentral()

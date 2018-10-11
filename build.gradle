@@ -1,5 +1,9 @@
+ext {
+    libraryVersion = '1.0.9'
+}
+
 group 'com.chrynan'
-version '1.0.9'
+version rootProject.ext.libraryVersion
 
 buildscript {
     repositories {
