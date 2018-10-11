@@ -1,9 +1,9 @@
 # logger
-## A simple Kotlin logging abstraction.
+## A simple Kotlin multiplatform logging abstraction.
 
 This library provides simple interfaces to wrap any logging utility and use them in an implementation independent and Kotlin syntatic manner.
 
-## Using the library
+## Building the library
 
 [![](https://jitpack.io/v/chRyNaN/logger.svg)](https://jitpack.io/#chRyNaN/logger)
 
@@ -27,6 +27,8 @@ implementation 'com.github.chRyNaN.logger:logger-android:VERSION'
 ```
 implementation 'com.github.chRyNaN.logger:logger-timber:VERSION'
 ```
+
+## Using the Library
 
 * Provide the logging implementation extending from the `Loggable` and `LogInitializer` interfaces:
 ```kotlin
