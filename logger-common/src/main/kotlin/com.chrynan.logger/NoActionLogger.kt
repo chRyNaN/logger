@@ -10,39 +10,39 @@ open class NoActionLogger : LogInitializer,
 
     override fun init() {}
 
-    override fun logError(throwable: Throwable, message: String) {}
+    override fun logError(tag: String?, throwable: Throwable, message: String) {}
 
-    override fun logError(throwable: Throwable) {}
+    override fun logError(tag: String?, throwable: Throwable) {}
 
-    override fun logError(message: String) {}
+    override fun logError(tag: String?, message: String) {}
 
-    override fun logDebug(throwable: Throwable, message: String) {}
+    override fun logDebug(tag: String?, throwable: Throwable, message: String) {}
 
-    override fun logDebug(throwable: Throwable) {}
+    override fun logDebug(tag: String?, throwable: Throwable) {}
 
-    override fun logDebug(message: String) {}
+    override fun logDebug(tag: String?, message: String) {}
 
-    override fun logWarning(throwable: Throwable, message: String) {}
+    override fun logWarning(tag: String?, throwable: Throwable, message: String) {}
 
-    override fun logWarning(throwable: Throwable) {}
+    override fun logWarning(tag: String?, throwable: Throwable) {}
 
-    override fun logWarning(message: String) {}
+    override fun logWarning(tag: String?, message: String) {}
 
-    override fun logInfo(throwable: Throwable, message: String) {}
+    override fun logInfo(tag: String?, throwable: Throwable, message: String) {}
 
-    override fun logInfo(throwable: Throwable) {}
+    override fun logInfo(tag: String?, throwable: Throwable) {}
 
-    override fun logInfo(message: String) {}
+    override fun logInfo(tag: String?, message: String) {}
 
-    override fun logVerbose(throwable: Throwable, message: String) {}
+    override fun logVerbose(tag: String?, throwable: Throwable, message: String) {}
 
-    override fun logVerbose(throwable: Throwable) {}
+    override fun logVerbose(tag: String?, throwable: Throwable) {}
 
-    override fun logVerbose(message: String) {}
+    override fun logVerbose(tag: String?, message: String) {}
 
-    override fun logWtf(throwable: Throwable, message: String) {}
+    override fun logWtf(tag: String?, throwable: Throwable, message: String) {}
 
-    override fun logWtf(throwable: Throwable) {}
+    override fun logWtf(tag: String?, throwable: Throwable) {}
 
-    override fun logWtf(message: String) {}
+    override fun logWtf(tag: String?, message: String) {}
 }

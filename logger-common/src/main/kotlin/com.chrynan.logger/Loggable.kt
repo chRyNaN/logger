@@ -5,39 +5,39 @@ package com.chrynan.logger
  */
 interface Loggable {
 
-    fun logError(throwable: Throwable, message: String)
+    fun logError(tag: String? = null, throwable: Throwable, message: String)
 
-    fun logError(throwable: Throwable)
+    fun logError(tag: String? = null, throwable: Throwable)
 
-    fun logError(message: String)
+    fun logError(tag: String? = null, message: String)
 
-    fun logDebug(throwable: Throwable, message: String)
+    fun logDebug(tag: String? = null, throwable: Throwable, message: String)
 
-    fun logDebug(throwable: Throwable)
+    fun logDebug(tag: String? = null, throwable: Throwable)
 
-    fun logDebug(message: String)
+    fun logDebug(tag: String? = null, message: String)
 
-    fun logWarning(throwable: Throwable, message: String)
+    fun logWarning(tag: String? = null, throwable: Throwable, message: String)
 
-    fun logWarning(throwable: Throwable)
+    fun logWarning(tag: String? = null, throwable: Throwable)
 
-    fun logWarning(message: String)
+    fun logWarning(tag: String? = null, message: String)
 
-    fun logInfo(throwable: Throwable, message: String)
+    fun logInfo(tag: String? = null, throwable: Throwable, message: String)
 
-    fun logInfo(throwable: Throwable)
+    fun logInfo(tag: String? = null, throwable: Throwable)
 
-    fun logInfo(message: String)
+    fun logInfo(tag: String? = null, message: String)
 
-    fun logVerbose(throwable: Throwable, message: String)
+    fun logVerbose(tag: String? = null, throwable: Throwable, message: String)
 
-    fun logVerbose(throwable: Throwable)
+    fun logVerbose(tag: String? = null, throwable: Throwable)
 
-    fun logVerbose(message: String)
+    fun logVerbose(tag: String? = null, message: String)
 
-    fun logWtf(throwable: Throwable, message: String)
+    fun logWtf(tag: String? = null, throwable: Throwable, message: String)
 
-    fun logWtf(throwable: Throwable)
+    fun logWtf(tag: String? = null, throwable: Throwable)
 
-    fun logWtf(message: String)
+    fun logWtf(tag: String? = null, message: String)
 }

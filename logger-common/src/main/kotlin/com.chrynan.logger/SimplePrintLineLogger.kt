@@ -1,5 +1,12 @@
 package com.chrynan.logger
 
+import com.chrynan.logger.DefaultTags.TAG_DEBUG
+import com.chrynan.logger.DefaultTags.TAG_ERROR
+import com.chrynan.logger.DefaultTags.TAG_INFO
+import com.chrynan.logger.DefaultTags.TAG_VERBOSE
+import com.chrynan.logger.DefaultTags.TAG_WARNING
+import com.chrynan.logger.DefaultTags.TAG_WTF
+
 /**
  * A simple implementation of [Loggable] that calls [println] when a log function is called.
  */
@@ -9,53 +16,65 @@ open class SimplePrintLineLogger : LogInitializer,
 
     companion object {
 
-        private const val TAG_ERROR = "Error"
-        private const val TAG_WARNING = "Warning"
-        private const val TAG_DEBUG = "Debug"
-        private const val TAG_INFO = "Info"
-        private const val TAG_VERBOSE = "Verbose"
-        private const val TAG_WTF = "Wtf"
         private const val MESSAGE = "Message"
         private const val THROWABLE_MESSAGE = "Throwable Message"
     }
 
     override fun init() = log(tag = TAG_INFO, message = "Initializing SimplePrintLineLogger.")
 
-    override fun logError(throwable: Throwable, message: String) = log(tag = TAG_ERROR, message = message, throwable = throwable)
+    override fun logError(tag: String?, throwable: Throwable, message: String) =
+            log(tag = tag ?: TAG_ERROR, message = message, throwable = throwable)
 
-    override fun logError(throwable: Throwable) = log(tag = TAG_ERROR, throwable = throwable)
+    override fun logError(tag: String?, throwable: Throwable) =
+            log(tag = tag ?: TAG_ERROR, throwable = throwable)
 
-    override fun logError(message: String) = log(tag = TAG_ERROR, message = message)
+    override fun logError(tag: String?, message: String) =
+            log(tag = tag ?: TAG_ERROR, message = message)
 
-    override fun logDebug(throwable: Throwable, message: String) = log(tag = TAG_DEBUG, message = message, throwable = throwable)
+    override fun logDebug(tag: String?, throwable: Throwable, message: String) =
+            log(tag = tag ?: TAG_DEBUG, message = message, throwable = throwable)
 
-    override fun logDebug(throwable: Throwable) = log(tag = TAG_DEBUG, throwable = throwable)
+    override fun logDebug(tag: String?, throwable: Throwable) =
+            log(tag = tag ?: TAG_DEBUG, throwable = throwable)
 
-    override fun logDebug(message: String) = log(tag = TAG_DEBUG, message = message)
+    override fun logDebug(tag: String?, message: String) =
+            log(tag = tag ?: TAG_DEBUG, message = message)
 
-    override fun logWarning(throwable: Throwable, message: String) = log(tag = TAG_WARNING, message = message, throwable = throwable)
+    override fun logWarning(tag: String?, throwable: Throwable, message: String) =
+            log(tag = tag ?: TAG_WARNING, message = message, throwable = throwable)
 
-    override fun logWarning(throwable: Throwable) = log(tag = TAG_WARNING, throwable = throwable)
+    override fun logWarning(tag: String?, throwable: Throwable) =
+            log(tag = tag ?: TAG_WARNING, throwable = throwable)
 
-    override fun logWarning(message: String) = log(tag = TAG_WARNING, message = message)
+    override fun logWarning(tag: String?, message: String) =
+            log(tag = tag ?: TAG_WARNING, message = message)
 
-    override fun logInfo(throwable: Throwable, message: String) = log(tag = TAG_INFO, message = message, throwable = throwable)
+    override fun logInfo(tag: String?, throwable: Throwable, message: String) =
+            log(tag = tag ?: TAG_INFO, message = message, throwable = throwable)
 
-    override fun logInfo(throwable: Throwable) = log(tag = TAG_INFO, throwable = throwable)
+    override fun logInfo(tag: String?, throwable: Throwable) =
+            log(tag = tag ?: TAG_INFO, throwable = throwable)
 
-    override fun logInfo(message: String) = log(tag = TAG_INFO, message = message)
+    override fun logInfo(tag: String?, message: String) =
+            log(tag = tag ?: TAG_INFO, message = message)
 
-    override fun logVerbose(throwable: Throwable, message: String) = log(tag = TAG_VERBOSE, message = message, throwable = throwable)
+    override fun logVerbose(tag: String?, throwable: Throwable, message: String) =
+            log(tag = tag ?: TAG_VERBOSE, message = message, throwable = throwable)
 
-    override fun logVerbose(throwable: Throwable) = log(tag = TAG_VERBOSE, throwable = throwable)
+    override fun logVerbose(tag: String?, throwable: Throwable) =
+            log(tag = tag ?: TAG_VERBOSE, throwable = throwable)
 
-    override fun logVerbose(message: String) = log(tag = TAG_VERBOSE, message = message)
+    override fun logVerbose(tag: String?, message: String) =
+            log(tag = tag ?: TAG_VERBOSE, message = message)
 
-    override fun logWtf(throwable: Throwable, message: String) = log(tag = TAG_WTF, message = message, throwable = throwable)
+    override fun logWtf(tag: String?, throwable: Throwable, message: String) =
+            log(tag = tag ?: TAG_WTF, message = message, throwable = throwable)
 
-    override fun logWtf(throwable: Throwable) = log(tag = TAG_WTF, throwable = throwable)
+    override fun logWtf(tag: String?, throwable: Throwable) =
+            log(tag = tag ?: TAG_WTF, throwable = throwable)
 
-    override fun logWtf(message: String) = log(tag = TAG_WTF, message = message)
+    override fun logWtf(tag: String?, message: String) =
+            log(tag = tag ?: TAG_WTF, message = message)
 
     @Suppress("MemberVisibilityCanPrivate")
     protected fun log(tag: String, message: String? = null, throwable: Throwable? = null) {
