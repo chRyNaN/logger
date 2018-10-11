@@ -1,5 +1,5 @@
 ext {
-    libraryVersion = '1.0.9'
+    libraryVersion = '1.0.10'
 }
 
 group 'com.chrynan'
