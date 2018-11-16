@@ -2,13 +2,8 @@ apply plugin: 'kotlin'
 apply plugin: 'kotlin-platform-jvm'
 apply plugin: 'maven'
 
-
 group 'com.chrynan'
 version rootProject.ext.libraryVersion
-
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7"

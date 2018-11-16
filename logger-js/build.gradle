@@ -4,10 +4,6 @@ apply plugin: 'maven'
 group 'com.chrynan'
 version rootProject.ext.libraryVersion
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-js"
 
