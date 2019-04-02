@@ -25,8 +25,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation project(':logger-jvm')
-    implementation project(':logger-android')
+    implementation project(':')
 
     implementation 'com.jakewharton.timber:timber:4.7.1'
 
