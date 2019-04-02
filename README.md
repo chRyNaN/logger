@@ -17,7 +17,7 @@ implementation 'com.github.chRyNaN.logger:VERSION'
 
 * Provide the logging implementation extending from the `Loggable` and `LogInitializer` interfaces:
 ```kotlin
-object Logger : LogInitializer,
+object MyLogger : LogInitializer,
         Loggable {
     
     ...
@@ -26,13 +26,13 @@ object Logger : LogInitializer,
 
 * Initialize the logger implementation before calling any of the logging functions:
 ```kotlin
-Logger.init()
+MyLogger.init()
 ```
 
 * Have any class that requires logging delegate to the `Loggable` interface from the implementation, either from a constructor parameter or as a Kotlin singleton object.
 ```kotlin
 // Delegation through the Kotlin Singleton Object implementation
-class MainActivity : Loggable by Logger { ... }
+class MainActivity : Loggable by MyLogger { ... }
 ```
 ```kotlin
 // Delegation through a constructor parameter
@@ -54,7 +54,7 @@ class MainPresenter constructor(private val loggable: Loggable) {
 }
 ```
 
-Or you could use the `Logger` Kotlin Object and it's associated convenience functions:
+Or you could use the provided `Logger` Kotlin Object and it's associated convenience functions:
 ```kotlin
 // First Create and initialize an instance of the Loggable and LogInitializer interface
 val loggable = SimplePrintLineLogger().apply { init() }
