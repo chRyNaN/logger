@@ -4,9 +4,8 @@ import javax.annotation.processing.Messager
 import javax.tools.Diagnostic
 
 @Suppress("unused")
-abstract class JavaAnnotationProcessorMessagerLogger : BaseLogger() {
-
-    protected abstract val messager: Messager
+open class JavaAnnotationProcessorMessagerLogger(private val messager: Messager) : Loggable,
+        LogInitializer {
 
     override fun init() = logInfo(message = "Initializing ${javaClass.simpleName}")
 

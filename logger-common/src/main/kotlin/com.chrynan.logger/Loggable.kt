@@ -5,39 +5,47 @@ package com.chrynan.logger
  */
 interface Loggable {
 
-    fun logError(tag: String? = null, throwable: Throwable, message: String)
+    fun log(logType: LogType, tag: String, message: String? = null, throwable: Throwable? = null)
 
-    fun logError(tag: String? = null, throwable: Throwable)
+    fun logError(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+            log(logType = LogType.ERROR, tag = tag ?: DefaultTags.TAG_ERROR, message = message, throwable = throwable)
 
-    fun logError(tag: String? = null, message: String)
+    fun logDebug(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+            log(logType = LogType.DEBUG, tag = tag ?: DefaultTags.TAG_DEBUG, message = message, throwable = throwable)
 
-    fun logDebug(tag: String? = null, throwable: Throwable, message: String)
+    fun logWarning(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+            log(logType = LogType.WARNING, tag = tag
+                    ?: DefaultTags.TAG_WARNING, message = message, throwable = throwable)
 
-    fun logDebug(tag: String? = null, throwable: Throwable)
+    fun logInfo(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+            log(logType = LogType.INFO, tag = tag ?: DefaultTags.TAG_INFO, message = message, throwable = throwable)
 
-    fun logDebug(tag: String? = null, message: String)
+    fun logVerbose(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+            log(logType = LogType.VERBOSE, tag = tag
+                    ?: DefaultTags.TAG_VERBOSE, message = message, throwable = throwable)
 
-    fun logWarning(tag: String? = null, throwable: Throwable, message: String)
-
-    fun logWarning(tag: String? = null, throwable: Throwable)
-
-    fun logWarning(tag: String? = null, message: String)
-
-    fun logInfo(tag: String? = null, throwable: Throwable, message: String)
-
-    fun logInfo(tag: String? = null, throwable: Throwable)
-
-    fun logInfo(tag: String? = null, message: String)
-
-    fun logVerbose(tag: String? = null, throwable: Throwable, message: String)
-
-    fun logVerbose(tag: String? = null, throwable: Throwable)
-
-    fun logVerbose(tag: String? = null, message: String)
-
-    fun logWtf(tag: String? = null, throwable: Throwable, message: String)
-
-    fun logWtf(tag: String? = null, throwable: Throwable)
-
-    fun logWtf(tag: String? = null, message: String)
+    fun logWtf(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+            log(logType = LogType.WTF, tag = tag ?: DefaultTags.TAG_WTF, message = message, throwable = throwable)
 }
+
+fun log(logType: LogType, tag: String, message: String? = null, throwable: Throwable? = null) =
+        Logger.loggable.log(logType = logType, tag = tag, throwable = throwable, message = message)
+
+fun logError(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+        Logger.loggable.logError(tag = tag ?: DefaultTags.TAG_ERROR, message = message, throwable = throwable)
+
+fun logDebug(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+        Logger.loggable.logDebug(tag = tag ?: DefaultTags.TAG_DEBUG, message = message, throwable = throwable)
+
+fun logWarning(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+        Logger.loggable.logWarning(tag = tag ?: DefaultTags.TAG_WARNING, message = message, throwable = throwable)
+
+fun logInfo(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+        Logger.loggable.logInfo(tag = tag ?: DefaultTags.TAG_INFO, message = message, throwable = throwable)
+
+fun logVerbose(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+        Logger.loggable.logVerbose(tag = tag
+                ?: DefaultTags.TAG_VERBOSE, message = message, throwable = throwable)
+
+fun logWtf(tag: String? = null, throwable: Throwable? = null, message: String? = null) =
+        Logger.loggable.logWtf(tag = tag ?: DefaultTags.TAG_WTF, message = message, throwable = throwable)
