@@ -49,7 +49,7 @@ publishing {
     publications {
         gpr(MavenPublication) {
             from(components.android)
-            artifactId 'android-timber'
+            artifactId 'logger-android-timber'
         }
     }
 }

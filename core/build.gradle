@@ -43,4 +43,9 @@ publishing {
             }
         }
     }
+    publications {
+        kotlinMultiplatform {
+            artifactId = "logger-core"
+        }
+    }
 }

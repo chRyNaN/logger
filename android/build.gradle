@@ -45,7 +45,7 @@ publishing {
     publications {
         gpr(MavenPublication) {
             from(components.android)
-            artifactId 'android'
+            artifactId 'logger-android'
         }
     }
 }
