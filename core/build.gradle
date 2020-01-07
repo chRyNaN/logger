@@ -47,5 +47,14 @@ publishing {
         kotlinMultiplatform {
             artifactId = "logger-core"
         }
+        jvm {
+            artifactId = "logger-core"
+        }
+        js {
+            artifactId = "logger-core"
+        }
+        metadata {
+            artifactId = "logger-core"
+        }
     }
 }
