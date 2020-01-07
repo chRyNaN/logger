@@ -48,13 +48,13 @@ publishing {
             artifactId = "logger-core"
         }
         jvm {
-            artifactId = "logger-core"
+            artifactId = "logger-core-jvm"
         }
         js {
-            artifactId = "logger-core"
+            artifactId = "logger-core-js"
         }
         metadata {
-            artifactId = "logger-core"
+            artifactId = "logger-core-metadata"
         }
     }
 }

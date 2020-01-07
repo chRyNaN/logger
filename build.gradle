@@ -2,7 +2,7 @@ ext {
     libraryGroup = 'com.chrynan.logger'
     libraryOwner = 'chrynan'
     libraryRepo = 'logger'
-    libraryVersion = '1.1.1'
+    libraryVersion = '1.1.2'
     libraryVersionCode = 1
 }
 
