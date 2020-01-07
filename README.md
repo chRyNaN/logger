@@ -5,12 +5,42 @@ This library provides simple interfaces to wrap any logging utility and use them
 
 ## Building the library
 
-[![](https://jitpack.io/v/chRyNaN/logger.svg)](https://jitpack.io/#chRyNaN/logger)
+The library is provided by [Github Packages](https://github.com/chRyNaN/logger/packages). Refer to the [releases](https://github.com/chRyNaN/logger/releases) for the latest version.
 
-The library is provided by [JitPack](https://jitpack.io/#chRyNaN/logger). **Note:** There is issues with JitPack and the Kotlin Multi-platform Project Structure so dependencies may not be resolved correctly.
-
+### Repository
+```kotlin
+maven {
+    url = uri("https://maven.pkg.github.com/chRyNaN/logger")
+    credentials {
+        // "gpr.user" is your Github username stored in your LOCAL git properties file
+        // "gpr.key" is your Github personal access token stored in your LOCAL git properties file
+        // Note that these may not be required since the project is public
+        username = project.findProperty("gpr.user") as? String?
+        password = project.findProperty("gpr.key") as? String?
+    }
+}
 ```
-implementation 'com.github.chRyNaN.logger:VERSION'
+
+### Dependencies
+**Kotlin Common Core Module:**
+```kotlin
+implementation("com.chrynan.logger:logger-core:VERSION")
+```
+**Kotlin JVM Core Module:**
+```kotlin
+implementation("com.chrynan.logger:logger-jvm:$VERSION")
+```
+**Kotlin JS Core Module:**
+```kotlin
+implementation("com.chrynan.logger:logger-js:$VERSION")
+```
+**Android Module:**
+```kotlin
+implementation("com.chrynan.logger:logger-android:$VERSION")
+```
+**Android Timber Module:**
+```kotlin
+implementation("com.chrynan.logger:logger-android-timber:$VERSION")
 ```
 
 ## Using the Library
