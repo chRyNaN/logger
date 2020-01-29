@@ -3,7 +3,7 @@ ext {
     libraryGroup = 'com.chrynan.logger'
     libraryOwner = 'chrynan'
     libraryRepo = 'logger'
-    libraryVersion = '1.1.2'
+    libraryVersion = '1.2.0'
     libraryVersionCode = 1
     libraryVersionDescription = 'Major Release'
     libraryGithubUrl = 'https://github.com/chRyNaN/logger.git'
