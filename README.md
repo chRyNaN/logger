@@ -5,18 +5,13 @@ This library provides simple interfaces to wrap any logging utility and use them
 
 ## Building the library
 
-The library is provided by [Github Packages](https://github.com/chRyNaN/logger/packages). Refer to the [releases](https://github.com/chRyNaN/logger/releases) for the latest version.
+The library is provided through [Bintray](https://bintray.com/). Refer to the [releases](https://github.com/chRyNaN/logger/releases) page for the latest version.
 
 ### Repository
 ```kotlin
-maven {
-    url = uri("https://maven.pkg.github.com/chRyNaN/logger")
-    credentials {
-        // "gpr.user" is your Github username stored in your LOCAL git properties file
-        // "gpr.key" is your Github personal access token stored in your LOCAL git properties file
-        // Note that these may not be required since the project is public
-        username = project.findProperty("gpr.user") as? String?
-        password = project.findProperty("gpr.key") as? String?
+repositories {
+    maven {
+        url = uri("https://dl.bintray.com/chrynan/chrynan")
     }
 }
 ```
@@ -24,7 +19,7 @@ maven {
 ### Dependencies
 **Kotlin Common Core Module:**
 ```kotlin
-implementation("com.chrynan.logger:logger-core:VERSION")
+implementation("com.chrynan.logger:logger-core:$VERSION")
 ```
 **Kotlin JVM Core Module:**
 ```kotlin

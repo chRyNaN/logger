@@ -1,5 +1,4 @@
 apply plugin: 'kotlin-multiplatform'
-apply plugin: 'maven-publish'
 
 group rootProject.libraryGroup
 version rootProject.libraryVersion
@@ -32,17 +31,6 @@ configurations {
 }
 
 publishing {
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/chrynan/logger")
-
-            credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
-                password = project.findProperty("gpr.key") ?: System.getenv("KEY")
-            }
-        }
-    }
     publications {
         kotlinMultiplatform {
             artifactId = "logger-core"
