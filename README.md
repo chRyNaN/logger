@@ -82,7 +82,7 @@ class MainPresenter @Inject constructor(private val logger: Loggable) : Loggable
 
 ### Directly using the object
 ```kotlin
-class MainPresenter constructor(private val loggable: Loggable) {
+class MainPresenter {
     
     fun example() {
         MyLogger.logDebug(message = "Some Message")
@@ -98,10 +98,6 @@ class MainPresenter constructor(private val loggable: Loggable) {
         loggable.logDebug(message = "Some Message")
     }
 }
-
-* Use the logging functions
-```kotlin
-logError(someThrowable, "Error doing something.")
 ```
 
 ### Using the included Logger object
@@ -118,13 +114,15 @@ Logger.logError(message = "Something went wrong")
 ```
 
 **Convenience functions:**
+
 If the `Logger` object is assigned a `Loggable`, then logging convenience functions can be used. These functions are exactly like the functions on the `Loggable` interface but can be used anywhere. The functions delegate to the `Logger` object functions.
 ```kotlin
 logError(tag = "MyTag", throwable = myThrowable, message = "Something went wrong")
 ```
 
 **Invalid use of the Logger object:**
-If the `Logger` object was not assigned a `Loggable`, then any calls to functions on the `Logger` object or the convenience functions will throw an exception. This is because the `Logger.loggable` property is a `late init` property.
+
+If the `Logger` object was not assigned a `Loggable`, then any calls to functions on the `Logger` object or the convenience functions will throw an exception. This is because the `Logger.loggable` property is a `lateinit` property.
 
 ## Platform Specific Implementations
 
