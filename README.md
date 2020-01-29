@@ -23,11 +23,11 @@ implementation("com.chrynan.logger:logger-core:$VERSION")
 ```
 **Kotlin JVM Core Module:**
 ```kotlin
-implementation("com.chrynan.logger:logger-jvm:$VERSION")
+implementation("com.chrynan.logger:logger-core-jvm:$VERSION")
 ```
 **Kotlin JS Core Module:**
 ```kotlin
-implementation("com.chrynan.logger:logger-js:$VERSION")
+implementation("com.chrynan.logger:logger-core-js:$VERSION")
 ```
 **Android Module:**
 ```kotlin
