@@ -1,3 +1,5 @@
+import org.gradle.api.publish.maven.internal.artifact.FileBasedMavenArtifact
+
 ext {
     bintrayRepo = 'chrynan'
     libraryGroup = 'com.chrynan.logger'
@@ -60,6 +62,18 @@ subprojects {
 
     bintrayUpload.doFirst {
         publications = publishing.publications.collect {
+            File moduleFile = project.buildDir.toPath()
+                    .resolve("publications/${it.name}/module.json").toFile()
+
+            if (moduleFile.exists()) {
+                it.artifact(new FileBasedMavenArtifact(moduleFile) {
+                    @Override
+                    protected String getDefaultExtension() {
+                        return "module"
+                    }
+                })
+            }
+
             it.name
         }
     }
