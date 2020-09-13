@@ -23,6 +23,9 @@ allprojects {
     repositories {
         mavenCentral()
         maven { url "https://dl.bintray.com/kotlin/kotlin-eap" }
+        maven {
+            url = "https://dl.bintray.com/chrynan/chrynan"
+        }
         google()
         jcenter()
     }
@@ -52,22 +55,24 @@ subprojects {
     }
 
     bintrayUpload.doFirst {
-        publications = publishing.publications.collect {
-            File moduleFile = project.buildDir.toPath()
-                    .resolve("publications/${it.name}/module.json").toFile()
+        publications = publishing.publications.collect { publication ->
+            File moduleFile = new File(project.buildDir, "publications/${publication.name}/module.json")
 
             if (moduleFile.exists()) {
-                it.artifact(new FileBasedMavenArtifact(moduleFile) {
-                    @Override
+                publication.artifact(new FileBasedMavenArtifact(moduleFile) {
                     protected String getDefaultExtension() {
                         return "module"
                     }
                 })
             }
 
-            it.name
+            publication.name
         }
     }
 
     bintrayUpload.dependsOn publishToMavenLocal
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
