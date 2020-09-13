@@ -1,8 +1,8 @@
 import com.chrynan.logger.buildSrc.LibraryConstants
 
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply plugin: 'digital.wup.android-maven-publish'
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+apply plugin: "digital.wup.android-maven-publish"
 
 group LibraryConstants.group
 version LibraryConstants.versionName
@@ -15,14 +15,12 @@ android {
         targetSdkVersion LibraryConstants.androidTargetSdkVersion
         versionCode LibraryConstants.versionCode
         versionName LibraryConstants.versionName
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
 }
@@ -30,16 +28,16 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 
-    implementation project(':core')
+    implementation project(":core")
 
-    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation "com.jakewharton.timber:timber:4.7.1"
 }
 
 publishing {
     publications {
         BintrayPublication(MavenPublication) {
             from(components.android)
-            artifactId 'logger-android-timber'
+            artifactId "logger-android-timber"
         }
     }
 }
