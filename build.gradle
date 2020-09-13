@@ -1,19 +1,8 @@
 import org.gradle.api.publish.maven.internal.artifact.FileBasedMavenArtifact
+import com.chrynan.logger.buildSrc.LibraryConstants
 
-ext {
-    bintrayRepo = 'chrynan'
-    libraryGroup = 'com.chrynan.logger'
-    libraryOwner = 'chrynan'
-    libraryRepo = 'logger'
-    libraryVersion = '1.2.1'
-    libraryVersionCode = 1
-    libraryVersionDescription = 'Major Release'
-    libraryGithubUrl = 'https://github.com/chRyNaN/logger.git'
-    libraryLicense = 'Apache-2.0'
-}
-
-group libraryGroup
-version libraryVersion
+group LibraryConstants.group
+version LibraryConstants.versionName
 
 buildscript {
     repositories {
@@ -46,16 +35,18 @@ subprojects {
     bintray {
         user = project.findProperty("BINTRAY_USER") ?: System.getenv('BINTRAY_USER')
         key = project.findProperty("BINTRAY_KEY") ?: System.getenv('BINTRAY_KEY')
+
         pkg {
-            repo = rootProject.bintrayRepo
-            name = rootProject.libraryRepo
-            licenses = [rootProject.libraryLicense]
-            vcsUrl = rootProject.libraryGithubUrl
+            repo = LibraryConstants.bintrayRepo
+            name = LibraryConstants.repoName
+            licenses = [LibraryConstants.license]
+            vcsUrl = LibraryConstants.vcsUrl
+
             version {
-                name = rootProject.libraryVersion
-                desc = rootProject.libraryVersionDescription
+                name = LibraryConstants.versionName
+                desc = LibraryConstants.versionDescription
                 released = new Date()
-                vcsTag = rootProject.libraryVersion
+                vcsTag = LibraryConstants.versionName
             }
         }
     }
