@@ -1,4 +1,4 @@
-package com.chrynan.loggertimber
+package com.chrynan.logger.android.timber
 
 import com.chrynan.logger.LogInitializer
 import com.chrynan.logger.LogType
@@ -7,7 +7,7 @@ import timber.log.Timber
 
 @Suppress("unused")
 abstract class TimberLogger : LogInitializer,
-        Loggable {
+    Loggable {
 
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {
         when (logType) {

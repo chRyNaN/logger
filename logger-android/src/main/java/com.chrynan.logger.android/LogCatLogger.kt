@@ -1,10 +1,10 @@
-package com.chrynan.logger
+package com.chrynan.logger.android
 
 import android.util.Log
 
 @Suppress("unused", "LogNotTimber")
 open class LogCatLogger : LogInitializer,
-        Loggable {
+    Loggable {
 
     override fun init() = logInfo(message = "Initializing ${this.javaClass.simpleName}.")
 
