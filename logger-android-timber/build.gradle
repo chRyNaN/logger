@@ -35,16 +35,15 @@ android {
         jvmTarget = "1.8"
         // Opt-in to experimental compose APIs
         freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
-        freeCompilerArgs += "-Xallow-jvm-ir-dependencies"
     }
 }
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 
-    api project(":android")
+    api project(":logger-android")
 
-    implementation "com.jakewharton.timber:timber:4.7.1"
+    api "com.jakewharton.timber:timber:4.7.1"
 }
 
 publishing {

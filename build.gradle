@@ -26,6 +26,7 @@ allprojects {
     repositories {
         mavenCentral()
         jcenter()
+        google()
         maven { url = "https://dl.bintray.com/kotlin/kotlin-eap" }
         maven { url = "https://repo.repsy.io/mvn/chrynan/public" }
         maven { url = "https://dl.bintray.com/chrynan/chrynan" }

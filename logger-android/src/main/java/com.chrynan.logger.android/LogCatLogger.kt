@@ -1,6 +1,7 @@
 package com.chrynan.logger.android
 
 import android.util.Log
+import com.chrynan.logger.*
 
 @Suppress("unused", "LogNotTimber")
 open class LogCatLogger : LogInitializer,
