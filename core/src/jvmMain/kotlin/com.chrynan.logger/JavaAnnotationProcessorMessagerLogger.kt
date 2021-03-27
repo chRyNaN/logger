@@ -5,7 +5,7 @@ import javax.tools.Diagnostic
 
 @Suppress("unused")
 open class JavaAnnotationProcessorMessagerLogger(private val messager: Messager) : Loggable,
-        LogInitializer {
+    LogInitializer {
 
     override fun init() = logInfo(message = "Initializing ${javaClass.simpleName}")
 

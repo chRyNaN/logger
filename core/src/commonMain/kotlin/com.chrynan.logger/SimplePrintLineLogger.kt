@@ -7,7 +7,7 @@ import com.chrynan.logger.DefaultTags.TAG_INFO
  */
 @Suppress("unused")
 open class SimplePrintLineLogger : LogInitializer,
-        Loggable {
+    Loggable {
 
     companion object {
 

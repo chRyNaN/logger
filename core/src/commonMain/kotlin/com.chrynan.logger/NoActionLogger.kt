@@ -6,7 +6,7 @@ package com.chrynan.logger
  */
 @Suppress("unused")
 open class NoActionLogger : LogInitializer,
-        Loggable {
+    Loggable {
 
     override fun init() {}
 

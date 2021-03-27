@@ -1,7 +1,7 @@
 package com.chrynan.logger
 
 open class ConsoleLogger : LogInitializer,
-        Loggable {
+    Loggable {
 
     override fun init() = console.info("Initializing ConsoleLogger")
 

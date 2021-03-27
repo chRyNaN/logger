@@ -5,7 +5,7 @@ import java.util.logging.Logger
 
 @Suppress("unused")
 open class JavaLogger(private val logger: Logger) : LogInitializer,
-        Loggable {
+    Loggable {
 
     override fun init() = logger.info("Initializing ${javaClass.simpleName}")
 
@@ -23,10 +23,10 @@ open class JavaLogger(private val logger: Logger) : LogInitializer,
     }
 
     private fun log(level: Level, tag: String, message: String? = null, throwable: Throwable? = null) =
-            when (level) {
-                Level.SEVERE -> logger.severe("Tag: $tag; message: $message; throwable: $throwable")
-                Level.WARNING -> logger.warning("Tag: $tag; message: $message; throwable: $throwable")
-                Level.INFO -> logger.info("Tag: $tag; message: $message; throwable: $throwable")
-                else -> logger.log(level, message, throwable)
-            }
+        when (level) {
+            Level.SEVERE -> logger.severe("Tag: $tag; message: $message; throwable: $throwable")
+            Level.WARNING -> logger.warning("Tag: $tag; message: $message; throwable: $throwable")
+            Level.INFO -> logger.info("Tag: $tag; message: $message; throwable: $throwable")
+            else -> logger.log(level, message, throwable)
+        }
 }
