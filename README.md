@@ -1,6 +1,7 @@
 # logger
 
-A simple Kotlin multi-platform logging abstraction.
+A simple Kotlin multi-platform logging abstraction. <br/>
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/chRyNaN/logger">
 
 This library provides simple interfaces to wrap any logging utility and use them in an implementation independent and
 Kotlin syntactic manner.
@@ -71,7 +72,8 @@ TimberLogger() // Uses the Android Timber Library
 ## Building the library
 
 The library is provided through [repsy.io](https://repsy.io). Refer to
-the [releases](https://github.com/chRyNaN/logger/releases) page for the latest version.
+the [releases](https://github.com/chRyNaN/logger/releases) page for the latest version. <br/>
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/chRyNaN/logger">
 
 ### Repository
 
@@ -92,13 +94,13 @@ implementation("com.chrynan.logger:logger-core:$VERSION")
 **Android Module:**
 
 ```kotlin
-implementation("com.chrynan.logger:logger-android:$VERSION")
+implementation("com.chrynan.logger:logger-android:$VERSION-release")
 ```
 
 **Android Timber Module:**
 
 ```kotlin
-implementation("com.chrynan.logger:logger-android-timber:$VERSION")
+implementation("com.chrynan.logger:logger-android-timber:$VERSION-release")
 ```
 
 ## Documentation
