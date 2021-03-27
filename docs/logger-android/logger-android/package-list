@@ -1,0 +1,10 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.chrynan.logger.android////PointingToDeclaration/logger-android/com.chrynan.logger.android/index.md
+$dokka.location:com.chrynan.logger.android/AndroidLogger///PointingToDeclaration/logger-android/com.chrynan.logger.android/-android-logger/index.md
+$dokka.location:com.chrynan.logger.android/LogCatLogger///PointingToDeclaration/logger-android/com.chrynan.logger.android/-log-cat-logger/index.md
+$dokka.location:com.chrynan.logger.android/LogCatLogger/LogCatLogger/#/PointingToDeclaration/logger-android/com.chrynan.logger.android/-log-cat-logger/-log-cat-logger.md
+$dokka.location:com.chrynan.logger.android/LogCatLogger/init/#/PointingToDeclaration/logger-android/com.chrynan.logger.android/-log-cat-logger/init.md
+$dokka.location:com.chrynan.logger.android/LogCatLogger/log/#com.chrynan.logger.LogType#kotlin.String#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-android/com.chrynan.logger.android/-log-cat-logger/log.md
+com.chrynan.logger.android
+

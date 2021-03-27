@@ -1,0 +1,8 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.chrynan.logger.android.timber////PointingToDeclaration/logger-android-timber/com.chrynan.logger.android.timber/index.md
+$dokka.location:com.chrynan.logger.android.timber/TimberLogger///PointingToDeclaration/logger-android-timber/com.chrynan.logger.android.timber/-timber-logger/index.md
+$dokka.location:com.chrynan.logger.android.timber/TimberLogger/TimberLogger/#/PointingToDeclaration/logger-android-timber/com.chrynan.logger.android.timber/-timber-logger/-timber-logger.md
+$dokka.location:com.chrynan.logger.android.timber/TimberLogger/log/#com.chrynan.logger.LogType#kotlin.String#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-android-timber/com.chrynan.logger.android.timber/-timber-logger/log.md
+com.chrynan.logger.android.timber
+
