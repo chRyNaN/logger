@@ -1,6 +1,9 @@
 import com.chrynan.logger.buildSrc.LibraryConstants
 
 apply plugin: "kotlin-multiplatform"
+apply plugin: "maven-publish"
+apply plugin: "org.jetbrains.dokka"
+apply plugin: "com.chrynan.target.plugin"
 
 group LibraryConstants.group
 version LibraryConstants.versionName
@@ -15,16 +18,6 @@ kotlin {
                 implementation "org.jetbrains.kotlin:kotlin-stdlib-common"
             }
         }
-        jvmMain {
-            dependencies {
-                implementation "org.jetbrains.kotlin:kotlin-stdlib"
-            }
-        }
-        jsMain {
-            dependencies {
-                implementation "org.jetbrains.kotlin:kotlin-stdlib-js"
-            }
-        }
     }
 }
 
@@ -32,19 +25,37 @@ configurations {
     compileClasspath
 }
 
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
 publishing {
-    publications {
-        kotlinMultiplatform {
-            artifactId = "logger-core"
+    repositories {
+        maven {
+            url "https://repo.repsy.io/mvn/chrynan/public"
+
+            credentials {
+                username = project.findProperty("repsyUsername") ?: System.getenv("repsyUsername")
+                password = project.findProperty("repsyToken") ?: System.getenv("repsyToken")
+            }
         }
-        jvm {
-            artifactId = "logger-core-jvm"
-        }
-        js {
-            artifactId = "logger-core-js"
-        }
-        metadata {
-            artifactId = "logger-core-metadata"
+    }
+}
+
+// Target Information
+kotlinTargetDataGenerator {
+    generateJson = true
+    generateSvg = true
+    outputPath = "${projectDir.path}/targets"
+}
+
+// Documentation
+tasks.named("dokkaGfm") {
+    dokkaSourceSets {
+        configureEach {
+            includes.from("Module.md")
         }
     }
 }
