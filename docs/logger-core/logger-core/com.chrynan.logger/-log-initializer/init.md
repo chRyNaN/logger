@@ -1,11 +1,6 @@
 //[logger-core](../../../index.md)/[com.chrynan.logger](../index.md)/[LogInitializer](index.md)/[init](init.md)
 
+# init
 
-
-# init  
-[common]  
-Content  
-abstract fun [init](init.md)()  
-
-
-
+[common]\
+abstract fun [init](init.md)()

@@ -1,11 +1,6 @@
 //[logger-core](../../../index.md)/[com.chrynan.logger](../index.md)/[JavaLogger](index.md)/[init](init.md)
 
+# init
 
-
-# init  
-[jvm]  
-Content  
-open override fun [init](init.md)()  
-
-
-
+[jvm]\
+open override fun [init](init.md)()

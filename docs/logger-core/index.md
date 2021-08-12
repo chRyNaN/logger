@@ -1,13 +1,9 @@
 //[logger-core](index.md)
 
+# logger-core
 
+## Packages
 
-# logger-core  
-
-
-## Packages  
-  
-|  Name | 
+| Name |
 |---|
-| <a name="com.chrynan.logger////PointingToDeclaration/"></a>[com.chrynan.logger](logger-core/com.chrynan.logger/index.md)|
-
+| [com.chrynan.logger](logger-core/com.chrynan.logger/index.md) |

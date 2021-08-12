@@ -1,11 +1,6 @@
 //[logger-core](../../../index.md)/[com.chrynan.logger](../index.md)/[NoActionLogger](index.md)/[NoActionLogger](-no-action-logger.md)
 
+# NoActionLogger
 
-
-# NoActionLogger  
-[common]  
-Content  
-fun [NoActionLogger](-no-action-logger.md)()  
-
-
-
+[common]\
+fun [NoActionLogger](-no-action-logger.md)()

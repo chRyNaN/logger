@@ -1,11 +1,6 @@
 //[logger-android-timber](../../../index.md)/[com.chrynan.logger.android.timber](../index.md)/[TimberLogger](index.md)/[TimberLogger](-timber-logger.md)
 
+# TimberLogger
 
-
-# TimberLogger  
-[androidJvm]  
-Content  
-fun [TimberLogger](-timber-logger.md)()  
-
-
-
+[androidJvm]\
+fun [TimberLogger](-timber-logger.md)()

@@ -1,11 +1,6 @@
 //[logger-core](../../../../index.md)/[com.chrynan.logger](../../index.md)/[LogType](../index.md)/[WTF](index.md)/[name](name.md)
 
+# name
 
-
-# name  
-[common]  
-Content  
-val [name](name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
-
-
-
+[common]\
+val [name](name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
