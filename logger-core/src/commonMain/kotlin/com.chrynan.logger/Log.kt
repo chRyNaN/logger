@@ -14,7 +14,7 @@ import kotlin.native.concurrent.ThreadLocal
  * created for each Thread in Kotlin Native.
  */
 @ThreadLocal
-object Logger : Loggable,
+object Log : Loggable,
     LogInitializer {
 
     lateinit var loggable: Loggable
