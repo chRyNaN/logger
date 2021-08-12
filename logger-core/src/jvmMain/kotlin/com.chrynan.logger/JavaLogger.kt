@@ -22,7 +22,12 @@ open class JavaLogger(private val logger: Logger) : LogInitializer,
         log(level = level, tag = tag, message = message, throwable = throwable)
     }
 
-    private fun log(level: Level, tag: String, message: String? = null, throwable: Throwable? = null) =
+    private fun log(
+        level: Level,
+        tag: String,
+        message: String? = null,
+        throwable: Throwable? = null
+    ) =
         when (level) {
             Level.SEVERE -> logger.severe("Tag: $tag; message: $message; throwable: $throwable")
             Level.WARNING -> logger.warning("Tag: $tag; message: $message; throwable: $throwable")
