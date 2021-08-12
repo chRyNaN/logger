@@ -15,15 +15,27 @@ open class SimplePrintLineLogger : LogInitializer,
         private const val THROWABLE_MESSAGE = "Throwable Message"
     }
 
-    override fun init() = log(logType = LogType.INFO, tag = TAG_INFO, message = "Initializing SimplePrintLineLogger.")
+    override fun init() =
+        log(logType = LogType.INFO, tag = TAG_INFO, message = "Initializing SimplePrintLineLogger.")
 
     @Suppress("MemberVisibilityCanPrivate")
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {
-        var sb = "$tag: "
-        message?.let { sb += "$MESSAGE: $it: " }
-        throwable?.let {
-            sb += "$THROWABLE_MESSAGE: ${it.message}: $it"
+        val outputMessage = if (message != null) {
+            "$tag: $MESSAGE: $message"
+        } else {
+            "$tag:"
         }
-        println(sb)
+
+        val throwableMessage =
+            throwable?.let { "$THROWABLE_MESSAGE: ${it.message}:\n${it.stackTraceToString()}" }
+                ?: ""
+
+        val output =
+            """
+                |$outputMessage
+                |$throwableMessage
+            """.trimMargin()
+
+        println(output)
     }
 }
