@@ -3,41 +3,30 @@
 A simple Kotlin multi-platform logging abstraction. <br/>
 <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/chRyNaN/logger">
 
-This library provides simple interfaces to wrap any logging utility and use them in an implementation independent and
-Kotlin syntactic manner.
+This library provides simple interfaces to wrap any logging utility and use them in Kotlin Multiplatform code.
 
 ```kotlin
-logError(message = "Error message.", throwable = someException)
+Log.logError(message = "Error message.", throwable = someException)
 ```
 
 ## Using the Library
 
-* Provide the logging implementation extending from the `Loggable` and `LogInitializer` interfaces:
+* Assign the `Loggable` implementation to the `Log.loggable` property:
 
 ```kotlin
-object MyLogger : LogInitializer,
-    Loggable {
-
-    ...
-}
+Log.logggable = DefaultLogger()
 ```
 
-* Initialize the logger implementation before calling any of the logging functions:
+* Optionally, call the `LogInitializer.init`:
 
 ```kotlin
-MyLogger.init()
-```
-
-* Assign the `Loggable` implementation to the `Logger.loggable` property:
-
-```kotlin
-Logger.logggable = loggable
+Log.init()
 ```
 
 * Log anything:
 
 ```kotlin
-logError(message = "Error Message", throwable = someException)
+Log.logError(message = "Error Message", throwable = someException)
 ```
 
 ## Platform Specific Implementations
@@ -62,11 +51,11 @@ JavaAnnotationProcessorMessagerLogger() // Uses the JVM Messager class used in A
 // Android 
 LogCatLogger() // Uses the Android Log functions
 
-// Android
-AndroidLogger // An Object that just delegates to the LogCatLogger
-
 // Android Timber
 TimberLogger() // Uses the Android Timber Library
+
+// iOS
+NSLogger()
 ```
 
 ## Building the library
@@ -89,12 +78,6 @@ repositories {
 
 ```kotlin
 implementation("com.chrynan.logger:logger-core:$VERSION")
-```
-
-**Android Module:**
-
-```kotlin
-implementation("com.chrynan.logger:logger-android:$VERSION-release")
 ```
 
 **Android Timber Module:**

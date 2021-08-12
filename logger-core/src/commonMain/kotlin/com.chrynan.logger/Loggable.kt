@@ -3,7 +3,7 @@
 package com.chrynan.logger
 
 /**
- * A platform agnostic Kotlin Logging interface inspired by Android's Log class.
+ * A platform agnostic Kotlin Multiplatform Logging interface inspired by Android's Log class.
  */
 interface Loggable {
 
