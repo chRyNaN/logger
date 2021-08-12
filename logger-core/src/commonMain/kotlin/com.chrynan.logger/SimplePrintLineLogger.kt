@@ -1,7 +1,5 @@
 package com.chrynan.logger
 
-import com.chrynan.logger.DefaultTags.TAG_INFO
-
 /**
  * A simple implementation of [Loggable] that calls [println] when a log function is called.
  */
@@ -16,7 +14,11 @@ open class SimplePrintLineLogger : LogInitializer,
     }
 
     override fun init() =
-        log(logType = LogType.INFO, tag = TAG_INFO, message = "Initializing SimplePrintLineLogger.")
+        log(
+            logType = LogType.INFO,
+            tag = LogType.INFO.typeName,
+            message = "Initializing SimplePrintLineLogger."
+        )
 
     @Suppress("MemberVisibilityCanPrivate")
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {
