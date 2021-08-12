@@ -2,7 +2,6 @@ import com.chrynan.logger.buildSrc.LibraryConstants
 
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
-apply plugin: "kotlin-android"
 apply plugin: "maven-publish"
 apply plugin: "org.jetbrains.dokka"
 
@@ -41,7 +40,7 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 
-    api project(":logger-android")
+    api project(":logger-core")
 
     api "com.jakewharton.timber:timber:4.7.1"
 }
