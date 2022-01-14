@@ -3,4 +3,4 @@
 package com.chrynan.logger
 
 @Suppress("FunctionName")
-actual fun DefaultLogger(): Loggable = LogCatLogger()
+actual fun DefaultLogger(): Logger = LogCatLogger()

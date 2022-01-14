@@ -1,4 +1,4 @@
 package com.chrynan.logger
 
 @Suppress("FunctionName")
-expect fun DefaultLogger(): Loggable
+expect fun DefaultLogger(): Logger

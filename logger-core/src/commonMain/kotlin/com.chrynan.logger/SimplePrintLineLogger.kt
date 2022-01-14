@@ -1,11 +1,11 @@
 package com.chrynan.logger
 
 /**
- * A simple implementation of [Loggable] that calls [println] when a log function is called.
+ * A simple implementation of [Logger] that calls [println] when a log function is called.
  */
 @Suppress("unused")
 open class SimplePrintLineLogger : LogInitializer,
-    Loggable {
+    Logger {
 
     override fun init() =
         log(

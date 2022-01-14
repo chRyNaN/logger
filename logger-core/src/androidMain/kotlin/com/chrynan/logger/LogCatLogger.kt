@@ -4,7 +4,7 @@ import android.util.Log
 
 @Suppress("unused", "LogNotTimber")
 open class LogCatLogger : LogInitializer,
-    Loggable {
+    Logger {
 
     override fun init() = info(message = "Initializing ${this::class.simpleName}.")
 

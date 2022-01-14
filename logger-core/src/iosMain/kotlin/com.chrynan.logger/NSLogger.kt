@@ -4,7 +4,7 @@ package com.chrynan.logger
 
 import platform.Foundation.NSLog
 
-open class NSLogger : Loggable,
+open class NSLogger : Logger,
     LogInitializer {
 
     override fun init() {}

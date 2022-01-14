@@ -5,7 +5,7 @@ package com.chrynan.logger
 import javax.annotation.processing.Messager
 import javax.tools.Diagnostic
 
-open class JavaAnnotationProcessorMessagerLogger(private val messager: Messager) : Loggable,
+open class JavaAnnotationProcessorMessagerLogger(private val messager: Messager) : Logger,
     LogInitializer {
 
     override fun init() = info(message = "Initializing ${javaClass.simpleName}")

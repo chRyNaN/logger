@@ -3,4 +3,4 @@
 package com.chrynan.logger
 
 @Suppress("FunctionName")
-actual fun DefaultLogger(): Loggable = NSLogger()
+actual fun DefaultLogger(): Logger = NSLogger()

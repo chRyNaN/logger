@@ -5,4 +5,4 @@ package com.chrynan.logger
 import java.util.logging.Logger
 
 @Suppress("FunctionName")
-actual fun DefaultLogger(): Loggable = JavaLogger(Logger.getGlobal())
+actual fun DefaultLogger(): com.chrynan.logger.Logger = JavaLogger(Logger.getGlobal())

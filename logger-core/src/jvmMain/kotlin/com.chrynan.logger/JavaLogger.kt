@@ -5,7 +5,7 @@ import java.util.logging.Logger
 
 @Suppress("unused")
 open class JavaLogger(private val logger: Logger) : LogInitializer,
-    Loggable {
+    com.chrynan.logger.Logger {
 
     override fun init() = logger.info("Initializing ${javaClass.simpleName}")
 
