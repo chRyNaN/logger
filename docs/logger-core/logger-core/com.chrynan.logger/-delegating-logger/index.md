@@ -1,13 +1,17 @@
-//[logger-core](../../../index.md)/[com.chrynan.logger](../index.md)/[Log](index.md)
+//[logger-core](../../../index.md)/[com.chrynan.logger](../index.md)/[DelegatingLogger](index.md)
 
-# Log
+# DelegatingLogger
 
 [common]\
-object [Log](index.md) : [Logger](../-logger/index.md), [LogInitializer](../-log-initializer/index.md)
+class [DelegatingLogger](index.md)(loggers: [Set](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html)&lt;[Logger](../-logger/index.md)&gt;, delegateIsEnabledChanges: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)) : [Logger](../-logger/index.md), [LogInitializer](../-log-initializer/index.md)
 
-An implementation of [Logger](../-logger/index.md) and [LogInitializer](../-log-initializer/index.md) that can be used as a singleton base to log throughout the application. Before calling one of [log](log.md) functions, a [Logger](../-logger/index.md) has to be assigned to the [logger](logger.md) property, this defaults to the [DefaultLogger](../-default-logger.md). Optionally, the [init](init.md) function can be called next, which just delegates to the [logger](logger.md) init function if it is a [LogInitializer](../-log-initializer/index.md) implementation.
+A [Logger](../-logger/index.md) implementation that delegates to the provided [loggers](../../../../logger-core/com.chrynan.logger/-delegating-logger/loggers.md). This allows for using multiple [Logger](../-logger/index.md)s.
 
-Note: This object is annotated with [ThreadLocal](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.native.concurrent/-thread-local/index.html) which means that a new instance will be created for each Thread in Kotlin Native.
+## Constructors
+
+| | |
+|---|---|
+| [DelegatingLogger](-delegating-logger.md) | [common]<br>fun [DelegatingLogger](-delegating-logger.md)(loggers: [Set](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html)&lt;[Logger](../-logger/index.md)&gt;, delegateIsEnabledChanges: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = false) |
 
 ## Functions
 
@@ -26,5 +30,4 @@ Note: This object is annotated with [ThreadLocal](https://kotlinlang.org/api/lat
 
 | Name | Summary |
 |---|---|
-| [isEnabled](is-enabled.md) | [common]<br>open override var [isEnabled](is-enabled.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)<br>Determines whether this [Logger](../-logger/index.md) instance should be used to output logs. This value should default to true. |
-| [logger](logger.md) | [common]<br>var [logger](logger.md): [Logger](../-logger/index.md) |
+| [isEnabled](is-enabled.md) | [common]<br>open override var [isEnabled](is-enabled.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) = true<br>Determines whether this [Logger](../-logger/index.md) instance should be used to output logs. This value should default to true. |

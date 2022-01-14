@@ -3,5 +3,8 @@
 # DefaultLogger
 
 [common, android, ios, js, jvm]\
-[common, android, ios, js, jvm]\
-fun [DefaultLogger](-default-logger.md)(): [Loggable](-loggable/index.md)
+[common]\
+expect fun [DefaultLogger](-default-logger.md)(): [Logger](-logger/index.md)
+
+[android, ios, js, jvm]\
+actual fun [DefaultLogger](-default-logger.md)(): [Logger](../../../logger-core/logger-core/com.chrynan.logger/-logger/index.md)

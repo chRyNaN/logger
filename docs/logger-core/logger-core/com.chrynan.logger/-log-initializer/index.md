@@ -5,7 +5,7 @@
 [common]\
 interface [LogInitializer](index.md)
 
-An interface that initializes an implementation of [Loggable](../-loggable/index.md).
+An interface that initializes an implementation of [Logger](../-logger/index.md).
 
 ## Functions
 
@@ -18,6 +18,7 @@ An interface that initializes an implementation of [Loggable](../-loggable/index
 | Name |
 |---|
 | [LogCatLogger](../-log-cat-logger/index.md) |
+| [DelegatingLogger](../-delegating-logger/index.md) |
 | [Log](../-log/index.md) |
 | [NoActionLogger](../-no-action-logger/index.md) |
 | [SimplePrintLineLogger](../-simple-print-line-logger/index.md) |

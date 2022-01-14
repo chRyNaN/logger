@@ -6,4 +6,4 @@
 
 | Name | Summary |
 |---|---|
-| [TimberLogger](-timber-logger/index.md) | [androidJvm]<br>abstract class [TimberLogger](-timber-logger/index.md) : [LogInitializer](../../../logger-core/logger-core/com.chrynan.logger/-log-initializer/index.md), [Loggable](../../../logger-core/logger-core/com.chrynan.logger/-loggable/index.md) |
+| [TimberLogger](-timber-logger/index.md) | [androidJvm]<br>abstract class [TimberLogger](-timber-logger/index.md) : [LogInitializer](../../../logger-core/logger-core/com.chrynan.logger/-log-initializer/index.md), [Logger](../../../logger-core/logger-core/com.chrynan.logger/-logger/index.md) |
