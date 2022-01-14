@@ -7,6 +7,8 @@ import java.util.logging.Logger
 open class JavaLogger(private val logger: Logger) : LogInitializer,
     com.chrynan.logger.Logger {
 
+    override var isEnabled: Boolean = true
+
     override fun init() = logger.info("Initializing ${javaClass.simpleName}")
 
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {

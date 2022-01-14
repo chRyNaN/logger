@@ -8,6 +8,8 @@ package com.chrynan.logger
 open class NoActionLogger : LogInitializer,
     Logger {
 
+    override var isEnabled: Boolean = true
+
     override fun init() {}
 
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {}

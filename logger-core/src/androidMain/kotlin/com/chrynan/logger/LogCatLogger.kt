@@ -6,6 +6,8 @@ import android.util.Log
 open class LogCatLogger : LogInitializer,
     Logger {
 
+    override var isEnabled: Boolean = true
+
     override fun init() = info(message = "Initializing ${this::class.simpleName}.")
 
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {

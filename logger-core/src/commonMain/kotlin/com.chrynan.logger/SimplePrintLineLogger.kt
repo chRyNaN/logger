@@ -7,6 +7,8 @@ package com.chrynan.logger
 open class SimplePrintLineLogger : LogInitializer,
     Logger {
 
+    override var isEnabled: Boolean = true
+
     override fun init() =
         log(
             logType = LogType.INFO,

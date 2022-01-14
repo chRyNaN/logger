@@ -5,6 +5,8 @@ package com.chrynan.logger
 open class ConsoleLogger : LogInitializer,
     Logger {
 
+    override var isEnabled: Boolean = true
+
     override fun init() = console.info("Initializing ConsoleLogger")
 
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {

@@ -17,12 +17,21 @@ import kotlin.native.concurrent.ThreadLocal
 object Log : Logger,
     LogInitializer {
 
+    override var isEnabled: Boolean
+        get() = logger.isEnabled
+        set(value) {
+            logger.isEnabled = value
+        }
+
     var logger: Logger = DefaultLogger()
 
     override fun init() {
         (logger as? LogInitializer)?.init()
     }
 
-    override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) =
-        logger.log(logType = logType, tag = tag, message = message, throwable = throwable)
+    override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {
+        if (logger.isEnabled) {
+            logger.log(logType = logType, tag = tag, message = message, throwable = throwable)
+        }
+    }
 }
