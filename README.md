@@ -6,15 +6,15 @@ A simple Kotlin multi-platform logging abstraction. <br/>
 This library provides simple interfaces to wrap any logging utility and use them in Kotlin Multiplatform code.
 
 ```kotlin
-Log.logError(message = "Error message.", throwable = someException)
+Log.error("Error message.")
 ```
 
 ## Using the Library
 
-* Assign the `Loggable` implementation to the `Log.loggable` property:
+* Assign the `Logger` implementation to the `Log.logger` property (defaults to `DefaultLogger`):
 
 ```kotlin
-Log.logggable = DefaultLogger()
+Log.logger = DefaultLogger()
 ```
 
 * Optionally, call the `LogInitializer.init`:
@@ -26,37 +26,44 @@ Log.init()
 * Log anything:
 
 ```kotlin
-Log.logError(message = "Error Message", throwable = someException)
+Log.error(message = "Error Message", throwable = someException)
 ```
 
-## Platform Specific Implementations
+### Platform Specific Implementations
 
-The library provides multiple platform specific `Loggable` and `LogInitializer` implementations that could be used or
-extended. For instance:
+The library provides multiple platform specific `Logger` implementations that could be used or extended. For instance:
 
-```kotlin
-// Common
-SimplePrintLineLogger() // Calls the println() Kotlin function
-NoActionLogger() // Has no operation default functions
+#### Common
 
-// JavaScript
-ConsoleLogger() // Uses the console
+* `DefaultLogger` - Platform default logging.
+    * **Android:** `LogCatLogger`
+    * **JVM:** `JavaLogger`
+    * **JS:** `ConsoleLogger`
+    * **iOS:** `NSLogger`
+* `DelegatingLogger` - Delegates to one or more `Loggers`.
+* `SimplePrintLineLogger` - Uses the `println()` Kotlin function.
+* `NoActionLogger` - No operation Logger.
 
-// Java - JVM Logger
-JavaLogger() // Uses the JVM Logger class
+#### JavaScript
 
-// Java
-JavaAnnotationProcessorMessagerLogger() // Uses the JVM Messager class used in Annotation Processors
+* `ConsoleLogger` - Uses the browser console.
 
-// Android 
-LogCatLogger() // Uses the Android Log functions
+#### Java
 
-// Android Timber
-TimberLogger() // Uses the Android Timber Library
+* `JavaLogger` - Uses the JVM Logger class.
+* `JavaAnnotationProcessorMessagerLogger` - Uses the JVM Messager class used in Annotation Processors.
 
-// iOS
-NSLogger()
-```
+#### Android
+
+* `LogCatLogger` - Uses the Android Log functions.
+
+#### Android Timber
+
+* `TimberLogger` - Uses the Android Timber Library.
+
+#### iOS
+
+* `NSLogger` - Uses `NSLog`.
 
 ## Building the library
 
