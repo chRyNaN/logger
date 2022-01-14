@@ -1,13 +1,14 @@
+@file:Suppress("unused")
+
 package com.chrynan.logger
 
 import javax.annotation.processing.Messager
 import javax.tools.Diagnostic
 
-@Suppress("unused")
 open class JavaAnnotationProcessorMessagerLogger(private val messager: Messager) : Loggable,
     LogInitializer {
 
-    override fun init() = logInfo(message = "Initializing ${javaClass.simpleName}")
+    override fun init() = info(message = "Initializing ${javaClass.simpleName}")
 
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {
         val kind = when (logType) {
@@ -22,3 +23,5 @@ open class JavaAnnotationProcessorMessagerLogger(private val messager: Messager)
         messager.printMessage(kind, "Tag: $tag; Message: $message; Throwable: $throwable")
     }
 }
+
+typealias JavaMessageLogger = JavaAnnotationProcessorMessagerLogger

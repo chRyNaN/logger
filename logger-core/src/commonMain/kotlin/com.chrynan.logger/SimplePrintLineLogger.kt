@@ -7,12 +7,6 @@ package com.chrynan.logger
 open class SimplePrintLineLogger : LogInitializer,
     Loggable {
 
-    companion object {
-
-        private const val MESSAGE = "Message"
-        private const val THROWABLE_MESSAGE = "Throwable Message"
-    }
-
     override fun init() =
         log(
             logType = LogType.INFO,
@@ -39,5 +33,11 @@ open class SimplePrintLineLogger : LogInitializer,
             """.trimMargin()
 
         println(output)
+    }
+
+    companion object {
+
+        private const val MESSAGE = "Message"
+        private const val THROWABLE_MESSAGE = "Throwable Message"
     }
 }
