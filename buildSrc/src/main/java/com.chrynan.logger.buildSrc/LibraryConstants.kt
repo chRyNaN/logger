@@ -1,3 +1,5 @@
+@file:Suppress("MemberVisibilityCanBePrivate")
+
 package com.chrynan.logger.buildSrc
 
 object LibraryConstants {
@@ -6,9 +8,9 @@ object LibraryConstants {
     const val group = "com.chrynan.logger"
     const val owner = "chrynan"
     const val repoName = "logger"
-    const val versionName = "1.4.0"
-    const val versionCode = 3
-    const val versionDescription = "Release 1.4.0 (3)"
+    const val versionName = "1.5.0"
+    const val versionCode = 4
+    const val versionDescription = "Release $versionName ($versionCode)"
     const val license = "Apache-2.0"
     const val vcsUrl = "https://github.com/chRyNaN/logger.git"
 
