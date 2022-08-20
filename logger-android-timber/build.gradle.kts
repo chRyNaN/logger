@@ -46,7 +46,7 @@ dependencies {
 
     api(project(":logger-core"))
 
-    api("com.jakewharton.timber:timber:4.7.1")
+    api("com.jakewharton.timber:timber:5.0.1")
 }
 
 afterEvaluate {
