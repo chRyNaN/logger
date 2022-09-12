@@ -5,7 +5,7 @@ package com.chrynan.logger
 open class ConsoleLogger : LogInitializer,
     Logger {
 
-    override var isEnabled: Boolean = true
+    override var isEnabled: Boolean = false
 
     override fun init() = console.info("Initializing ConsoleLogger")
 

@@ -24,7 +24,7 @@ import kotlinx.coroutines.launch
  */
 abstract class AsyncLogger : Logger {
 
-    override var isEnabled: Boolean = true
+    override var isEnabled: Boolean = false
 
     protected abstract val coroutineScope: CoroutineScope
 

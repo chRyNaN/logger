@@ -1,12 +1,13 @@
 package com.chrynan.logger
 
 import android.util.Log
+import com.chrynan.logger.core.android.BuildConfig
 
 @Suppress("unused", "LogNotTimber")
 open class LogCatLogger : LogInitializer,
     Logger {
 
-    override var isEnabled: Boolean = true
+    override var isEnabled: Boolean = BuildConfig.DEBUG
 
     override fun init() = info(message = "Initializing ${this::class.simpleName}.")
 

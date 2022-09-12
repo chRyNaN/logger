@@ -7,7 +7,7 @@ import platform.Foundation.NSLog
 open class NSLogger : Logger,
     LogInitializer {
 
-    override var isEnabled: Boolean = true
+    override var isEnabled: Boolean = false
 
     override fun init() {}
 

@@ -17,7 +17,7 @@ class DelegatingLogger(
         }
     }
 
-    override var isEnabled: Boolean = true
+    override var isEnabled: Boolean = false
         set(value) {
             field = value
 

@@ -8,7 +8,7 @@ import javax.tools.Diagnostic
 open class JavaAnnotationProcessorMessagerLogger(private val messager: Messager) : Logger,
     LogInitializer {
 
-    override var isEnabled: Boolean = true
+    override var isEnabled: Boolean = false
 
     override fun init() = info(message = "Initializing ${javaClass.simpleName}")
 
