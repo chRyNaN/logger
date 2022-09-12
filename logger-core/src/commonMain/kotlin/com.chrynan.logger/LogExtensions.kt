@@ -5,7 +5,7 @@ package com.chrynan.logger
 /**
  * Invokes the [Logger.log] function for [LogType.ERROR].
  */
-fun Logger.error(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
+inline fun Logger.error(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
     log(
         logType = LogType.ERROR,
         tag = tag ?: LogType.ERROR.typeName,
@@ -16,7 +16,7 @@ fun Logger.error(message: String? = null, tag: String? = null, throwable: Throwa
 /**
  * Invokes the [Logger.log] function for [LogType.DEBUG].
  */
-fun Logger.debug(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
+inline fun Logger.debug(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
     log(
         logType = LogType.DEBUG,
         tag = tag ?: LogType.DEBUG.typeName,
@@ -27,7 +27,7 @@ fun Logger.debug(message: String? = null, tag: String? = null, throwable: Throwa
 /**
  * Invokes the [Logger.log] function for [LogType.WARNING].
  */
-fun Logger.warning(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
+inline fun Logger.warning(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
     log(
         logType = LogType.WARNING,
         tag = tag ?: LogType.WARNING.typeName,
@@ -38,7 +38,7 @@ fun Logger.warning(message: String? = null, tag: String? = null, throwable: Thro
 /**
  * Invokes the [Logger.log] function for [LogType.INFO].
  */
-fun Logger.info(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
+inline fun Logger.info(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
     log(
         logType = LogType.INFO,
         tag = tag ?: LogType.INFO.typeName,
@@ -49,7 +49,7 @@ fun Logger.info(message: String? = null, tag: String? = null, throwable: Throwab
 /**
  * Invokes the [Logger.log] function for [LogType.VERBOSE].
  */
-fun Logger.verbose(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
+inline fun Logger.verbose(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
     log(
         logType = LogType.VERBOSE,
         tag = tag ?: LogType.VERBOSE.typeName,
@@ -60,7 +60,7 @@ fun Logger.verbose(message: String? = null, tag: String? = null, throwable: Thro
 /**
  * Invokes the [Logger.log] function for [LogType.WTF].
  */
-fun Logger.wtf(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
+inline fun Logger.wtf(message: String? = null, tag: String? = null, throwable: Throwable? = null) =
     log(
         logType = LogType.WTF,
         tag = tag ?: LogType.WTF.typeName,
@@ -71,7 +71,7 @@ fun Logger.wtf(message: String? = null, tag: String? = null, throwable: Throwabl
 /**
  * Invokes the [Logger.log] function using the provided [logValues].
  */
-fun Logger.log(logValues: LogValues) =
+inline fun Logger.log(logValues: LogValues) =
     log(
         logType = logValues.logType,
         tag = logValues.tag ?: logValues.logType.typeName,
@@ -82,4 +82,4 @@ fun Logger.log(logValues: LogValues) =
 /**
  * Invokes the [Logger.log] function using the [Loggable.logValues] obtained from the provided [loggable] instance.
  */
-fun Logger.log(loggable: Loggable) = log(logValues = loggable.logValues())
+inline fun Logger.log(loggable: Loggable) = log(logValues = loggable.logValues())
