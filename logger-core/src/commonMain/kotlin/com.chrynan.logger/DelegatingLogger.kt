@@ -33,4 +33,30 @@ class DelegatingLogger(
             }
         }
     }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other !is DelegatingLogger) return false
+
+        if (loggers != other.loggers) return false
+        if (delegateIsEnabledChanges != other.delegateIsEnabledChanges) return false
+        if (isEnabled != other.isEnabled) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = loggers.hashCode()
+
+        result = 31 * result + delegateIsEnabledChanges.hashCode()
+        result = 31 * result + isEnabled.hashCode()
+
+        return result
+    }
+
+    override fun toString(): String =
+        "DelegatingLogger(" +
+                "loggers=$loggers, " +
+                "delegateIsEnabledChanges=$delegateIsEnabledChanges, " +
+                "isEnabled=$isEnabled)"
 }
