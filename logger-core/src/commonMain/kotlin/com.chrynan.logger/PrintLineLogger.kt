@@ -4,7 +4,7 @@ package com.chrynan.logger
  * A simple implementation of [Logger] that calls [println] when a log function is called.
  */
 @Suppress("unused")
-open class SimplePrintLineLogger : LogInitializer,
+open class PrintLineLogger : LogInitializer,
     Logger {
 
     override var isEnabled: Boolean = true
