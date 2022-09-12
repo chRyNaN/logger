@@ -82,4 +82,4 @@ fun Logger.log(logValues: LogValues) =
 /**
  * Invokes the [Logger.log] function using the [Loggable.logValues] obtained from the provided [loggable] instance.
  */
-fun Logger.log(loggable: Loggable) = log(logValues = loggable.logValues)
+fun Logger.log(loggable: Loggable) = log(logValues = loggable.logValues())
