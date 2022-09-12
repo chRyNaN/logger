@@ -2,6 +2,9 @@
 
 package com.chrynan.logger
 
+/**
+ * Represents the type of log operation being performed.
+ */
 enum class LogType(val typeName: String) {
 
     DEBUG(typeName = "Debug"),

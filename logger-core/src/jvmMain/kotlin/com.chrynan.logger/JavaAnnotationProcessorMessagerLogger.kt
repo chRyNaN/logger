@@ -13,16 +13,18 @@ open class JavaAnnotationProcessorMessagerLogger(private val messager: Messager)
     override fun init() = info(message = "Initializing ${javaClass.simpleName}")
 
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {
-        val kind = when (logType) {
-            LogType.DEBUG -> Diagnostic.Kind.NOTE
-            LogType.INFO -> Diagnostic.Kind.NOTE
-            LogType.VERBOSE -> Diagnostic.Kind.OTHER
-            LogType.WARNING -> Diagnostic.Kind.WARNING
-            LogType.ERROR -> Diagnostic.Kind.ERROR
-            LogType.WTF -> Diagnostic.Kind.MANDATORY_WARNING
-        }
+        if (isEnabled) {
+            val kind = when (logType) {
+                LogType.DEBUG -> Diagnostic.Kind.NOTE
+                LogType.INFO -> Diagnostic.Kind.NOTE
+                LogType.VERBOSE -> Diagnostic.Kind.OTHER
+                LogType.WARNING -> Diagnostic.Kind.WARNING
+                LogType.ERROR -> Diagnostic.Kind.ERROR
+                LogType.WTF -> Diagnostic.Kind.MANDATORY_WARNING
+            }
 
-        messager.printMessage(kind, "Tag: $tag; Message: $message; Throwable: $throwable")
+            messager.printMessage(kind, "Tag: $tag; Message: $message; Throwable: $throwable")
+        }
     }
 }
 

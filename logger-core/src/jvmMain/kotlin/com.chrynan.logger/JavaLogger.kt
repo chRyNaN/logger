@@ -12,16 +12,18 @@ open class JavaLogger(private val logger: Logger) : LogInitializer,
     override fun init() = logger.info("Initializing ${javaClass.simpleName}")
 
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {
-        val level = when (logType) {
-            LogType.INFO -> Level.INFO
-            LogType.DEBUG -> Level.FINE
-            LogType.ERROR -> Level.SEVERE
-            LogType.VERBOSE -> Level.FINEST
-            LogType.WARNING -> Level.WARNING
-            LogType.WTF -> Level.SEVERE
-        }
+        if (isEnabled) {
+            val level = when (logType) {
+                LogType.INFO -> Level.INFO
+                LogType.DEBUG -> Level.FINE
+                LogType.ERROR -> Level.SEVERE
+                LogType.VERBOSE -> Level.FINEST
+                LogType.WARNING -> Level.WARNING
+                LogType.WTF -> Level.SEVERE
+            }
 
-        log(level = level, tag = tag, message = message, throwable = throwable)
+            log(level = level, tag = tag, message = message, throwable = throwable)
+        }
     }
 
     private fun log(

@@ -12,10 +12,12 @@ open class NSLogger : Logger,
     override fun init() {}
 
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {
-        NSLog("%s: (%s) %s", logType.typeName, tag, message)
+        if (isEnabled) {
+            NSLog("%s: (%s) %s", logType.typeName, tag, message)
 
-        throwable?.let {
-            NSLog("%s", it.stackTraceToString())
+            throwable?.let {
+                NSLog("%s", it.stackTraceToString())
+            }
         }
     }
 }

@@ -18,23 +18,25 @@ open class PrintLineLogger : LogInitializer,
 
     @Suppress("MemberVisibilityCanPrivate")
     override fun log(logType: LogType, tag: String, message: String?, throwable: Throwable?) {
-        val outputMessage = if (message != null) {
-            "$tag: $MESSAGE: $message"
-        } else {
-            "$tag:"
-        }
+        if (isEnabled) {
+            val outputMessage = if (message != null) {
+                "$tag: $MESSAGE: $message"
+            } else {
+                "$tag:"
+            }
 
-        val throwableMessage =
-            throwable?.let { "$THROWABLE_MESSAGE: ${it.message}:\n${it.stackTraceToString()}" }
-                ?: ""
+            val throwableMessage =
+                throwable?.let { "$THROWABLE_MESSAGE: ${it.message}:\n${it.stackTraceToString()}" }
+                    ?: ""
 
-        val output =
-            """
+            val output =
+                """
                 |$outputMessage
                 |$throwableMessage
             """.trimMargin()
 
-        println(output)
+            println(output)
+        }
     }
 
     companion object {
