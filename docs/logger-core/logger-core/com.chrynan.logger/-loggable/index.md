@@ -3,12 +3,12 @@
 # Loggable
 
 [common]\
-interface [Loggable](index.md)
+fun interface [Loggable](index.md)
 
 Represents an object than can be logged with a [Logger](../-logger/index.md).
 
-## Properties
+## Functions
 
 | Name | Summary |
 |---|---|
-| [logValues](log-values.md) | [common]<br>abstract val [logValues](log-values.md): [LogValues](../-log-values/index.md) |
+| [logValues](log-values.md) | [common]<br>abstract fun [logValues](log-values.md)(): [LogValues](../-log-values/index.md)<br>Obtains the [LogValues](../-log-values/index.md) that can be used to invoke the [Logger.log](../-logger/log.md) function. |

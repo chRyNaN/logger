@@ -4,10 +4,33 @@ $dokka.location:com.chrynan.logger.android.timber////PointingToDeclaration/logg
 $dokka.location:com.chrynan.logger.android.timber/TimberLogger///PointingToDeclaration/logger-android-timber/logger-android-timber/com.chrynan.logger.android.timber/-timber-logger/index.md
 $dokka.location:com.chrynan.logger.android.timber/TimberLogger/TimberLogger/#/PointingToDeclaration/logger-android-timber/logger-android-timber/com.chrynan.logger.android.timber/-timber-logger/-timber-logger.md
 $dokka.location:com.chrynan.logger.android.timber/TimberLogger/log/#com.chrynan.logger.LogType#kotlin.String#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-android-timber/logger-android-timber/com.chrynan.logger.android.timber/-timber-logger/log.md
+$dokka.location:com.chrynan.logger.ktor.client////PointingToDeclaration/logger-ktor-client/logger-ktor-client/com.chrynan.logger.ktor.client/index.md
+$dokka.location:com.chrynan.logger.ktor.client/KtorLogger///PointingToDeclaration/logger-ktor-client/logger-ktor-client/com.chrynan.logger.ktor.client/-ktor-logger/index.md
+$dokka.location:com.chrynan.logger.ktor.client/KtorLogger/KtorLogger/#com.chrynan.logger.Logger#com.chrynan.logger.LogType#kotlin.String?/PointingToDeclaration/logger-ktor-client/logger-ktor-client/com.chrynan.logger.ktor.client/-ktor-logger/-ktor-logger.md
+$dokka.location:com.chrynan.logger.ktor.client/KtorLogger/equals/#kotlin.Any?/PointingToDeclaration/logger-ktor-client/logger-ktor-client/com.chrynan.logger.ktor.client/-ktor-logger/equals.md
+$dokka.location:com.chrynan.logger.ktor.client/KtorLogger/hashCode/#/PointingToDeclaration/logger-ktor-client/logger-ktor-client/com.chrynan.logger.ktor.client/-ktor-logger/hash-code.md
+$dokka.location:com.chrynan.logger.ktor.client/KtorLogger/log/#kotlin.String/PointingToDeclaration/logger-ktor-client/logger-ktor-client/com.chrynan.logger.ktor.client/-ktor-logger/log.md
+$dokka.location:com.chrynan.logger.ktor.client/KtorLogger/toString/#/PointingToDeclaration/logger-ktor-client/logger-ktor-client/com.chrynan.logger.ktor.client/-ktor-logger/to-string.md
 $dokka.location:com.chrynan.logger////PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/index.md
 $dokka.location:com.chrynan.logger//DefaultLogger/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-default-logger.md
+$dokka.location:com.chrynan.logger//debug/com.chrynan.logger.Logger#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/debug.md
+$dokka.location:com.chrynan.logger//debug/com.chrynan.logger.Logger#kotlin.String?#kotlin.Throwable?#kotlin.Function0[kotlin.String?]/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/debug.md
+$dokka.location:com.chrynan.logger//error/com.chrynan.logger.Logger#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/error.md
+$dokka.location:com.chrynan.logger//error/com.chrynan.logger.Logger#kotlin.String?#kotlin.Throwable?#kotlin.Function0[kotlin.String?]/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/error.md
+$dokka.location:com.chrynan.logger//info/com.chrynan.logger.Logger#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/info.md
+$dokka.location:com.chrynan.logger//info/com.chrynan.logger.Logger#kotlin.String?#kotlin.Throwable?#kotlin.Function0[kotlin.String?]/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/info.md
 $dokka.location:com.chrynan.logger//log/com.chrynan.logger.Logger#com.chrynan.logger.LogValues/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/log.md
 $dokka.location:com.chrynan.logger//log/com.chrynan.logger.Logger#com.chrynan.logger.Loggable/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/log.md
+$dokka.location:com.chrynan.logger//verbose/com.chrynan.logger.Logger#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/verbose.md
+$dokka.location:com.chrynan.logger//verbose/com.chrynan.logger.Logger#kotlin.String?#kotlin.Throwable?#kotlin.Function0[kotlin.String?]/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/verbose.md
+$dokka.location:com.chrynan.logger//warning/com.chrynan.logger.Logger#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/warning.md
+$dokka.location:com.chrynan.logger//warning/com.chrynan.logger.Logger#kotlin.String?#kotlin.Throwable?#kotlin.Function0[kotlin.String?]/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/warning.md
+$dokka.location:com.chrynan.logger//wtf/com.chrynan.logger.Logger#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/wtf.md
+$dokka.location:com.chrynan.logger//wtf/com.chrynan.logger.Logger#kotlin.String?#kotlin.Throwable?#kotlin.Function0[kotlin.String?]/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/wtf.md
+$dokka.location:com.chrynan.logger/AsyncLogger///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-async-logger/index.md
+$dokka.location:com.chrynan.logger/AsyncLogger/AsyncLogger/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-async-logger/-async-logger.md
+$dokka.location:com.chrynan.logger/AsyncLogger/isEnabled/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-async-logger/is-enabled.md
+$dokka.location:com.chrynan.logger/AsyncLogger/log/#com.chrynan.logger.LogType#kotlin.String#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-async-logger/log.md
 $dokka.location:com.chrynan.logger/ConsoleLogger///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-console-logger/index.md
 $dokka.location:com.chrynan.logger/ConsoleLogger/ConsoleLogger/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-console-logger/-console-logger.md
 $dokka.location:com.chrynan.logger/ConsoleLogger/init/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-console-logger/init.md
@@ -15,9 +38,12 @@ $dokka.location:com.chrynan.logger/ConsoleLogger/isEnabled/#/PointingToDeclarati
 $dokka.location:com.chrynan.logger/ConsoleLogger/log/#com.chrynan.logger.LogType#kotlin.String#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-console-logger/log.md
 $dokka.location:com.chrynan.logger/DelegatingLogger///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-delegating-logger/index.md
 $dokka.location:com.chrynan.logger/DelegatingLogger/DelegatingLogger/#kotlin.collections.Set[com.chrynan.logger.Logger]#kotlin.Boolean/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-delegating-logger/-delegating-logger.md
+$dokka.location:com.chrynan.logger/DelegatingLogger/equals/#kotlin.Any?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-delegating-logger/equals.md
+$dokka.location:com.chrynan.logger/DelegatingLogger/hashCode/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-delegating-logger/hash-code.md
 $dokka.location:com.chrynan.logger/DelegatingLogger/init/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-delegating-logger/init.md
 $dokka.location:com.chrynan.logger/DelegatingLogger/isEnabled/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-delegating-logger/is-enabled.md
 $dokka.location:com.chrynan.logger/DelegatingLogger/log/#com.chrynan.logger.LogType#kotlin.String#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-delegating-logger/log.md
+$dokka.location:com.chrynan.logger/DelegatingLogger/toString/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-delegating-logger/to-string.md
 $dokka.location:com.chrynan.logger/JavaAnnotationProcessorMessagerLogger///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-java-annotation-processor-messager-logger/index.md
 $dokka.location:com.chrynan.logger/JavaAnnotationProcessorMessagerLogger/JavaAnnotationProcessorMessagerLogger/#javax.annotation.processing.Messager/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-java-annotation-processor-messager-logger/-java-annotation-processor-messager-logger.md
 $dokka.location:com.chrynan.logger/JavaAnnotationProcessorMessagerLogger/init/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-java-annotation-processor-messager-logger/init.md
@@ -32,6 +58,7 @@ $dokka.location:com.chrynan.logger/Log///PointingToDeclaration/logger-core/logg
 $dokka.location:com.chrynan.logger/Log/init/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log/init.md
 $dokka.location:com.chrynan.logger/Log/isEnabled/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log/is-enabled.md
 $dokka.location:com.chrynan.logger/Log/log/#com.chrynan.logger.LogType#kotlin.String#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log/log.md
+$dokka.location:com.chrynan.logger/Log/logValues/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log/log-values.md
 $dokka.location:com.chrynan.logger/Log/logger/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log/logger.md
 $dokka.location:com.chrynan.logger/LogCatLogger///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-cat-logger/index.md
 $dokka.location:com.chrynan.logger/LogCatLogger/LogCatLogger/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-cat-logger/-log-cat-logger.md
@@ -42,12 +69,12 @@ $dokka.location:com.chrynan.logger/LogInitializer///PointingToDeclaration/logge
 $dokka.location:com.chrynan.logger/LogInitializer/init/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-initializer/init.md
 $dokka.location:com.chrynan.logger/LogType.Companion///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-type/-companion/index.md
 $dokka.location:com.chrynan.logger/LogType.Companion/getByTypeName/#kotlin.String#kotlin.Boolean/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-type/-companion/get-by-type-name.md
-$dokka.location:com.chrynan.logger/LogType.DEBUG///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-type/-d-e-b-u-g/index.md
-$dokka.location:com.chrynan.logger/LogType.ERROR///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-type/-e-r-r-o-r/index.md
-$dokka.location:com.chrynan.logger/LogType.INFO///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-type/-i-n-f-o/index.md
-$dokka.location:com.chrynan.logger/LogType.VERBOSE///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-type/-v-e-r-b-o-s-e/index.md
-$dokka.location:com.chrynan.logger/LogType.WARNING///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-type/-w-a-r-n-i-n-g/index.md
-$dokka.location:com.chrynan.logger/LogType.WTF///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-type/-w-t-f/index.md
+$dokka.location:com.chrynan.logger/LogType.DEBUG///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}logger-core/logger-core/com.chrynan.logger/-log-type/-d-e-b-u-g/index.md
+$dokka.location:com.chrynan.logger/LogType.ERROR///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}logger-core/logger-core/com.chrynan.logger/-log-type/-e-r-r-o-r/index.md
+$dokka.location:com.chrynan.logger/LogType.INFO///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}logger-core/logger-core/com.chrynan.logger/-log-type/-i-n-f-o/index.md
+$dokka.location:com.chrynan.logger/LogType.VERBOSE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}logger-core/logger-core/com.chrynan.logger/-log-type/-v-e-r-b-o-s-e/index.md
+$dokka.location:com.chrynan.logger/LogType.WARNING///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}logger-core/logger-core/com.chrynan.logger/-log-type/-w-a-r-n-i-n-g/index.md
+$dokka.location:com.chrynan.logger/LogType.WTF///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}logger-core/logger-core/com.chrynan.logger/-log-type/-w-t-f/index.md
 $dokka.location:com.chrynan.logger/LogType///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-type/index.md
 $dokka.location:com.chrynan.logger/LogType/typeName/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-type/type-name.md
 $dokka.location:com.chrynan.logger/LogValues///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-log-values/index.md
@@ -59,14 +86,8 @@ $dokka.location:com.chrynan.logger/LogValues/throwable/#/PointingToDeclaration/
 $dokka.location:com.chrynan.logger/Loggable///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-loggable/index.md
 $dokka.location:com.chrynan.logger/Loggable/logValues/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-loggable/log-values.md
 $dokka.location:com.chrynan.logger/Logger///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-logger/index.md
-$dokka.location:com.chrynan.logger/Logger/debug/#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-logger/debug.md
-$dokka.location:com.chrynan.logger/Logger/error/#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-logger/error.md
-$dokka.location:com.chrynan.logger/Logger/info/#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-logger/info.md
 $dokka.location:com.chrynan.logger/Logger/isEnabled/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-logger/is-enabled.md
 $dokka.location:com.chrynan.logger/Logger/log/#com.chrynan.logger.LogType#kotlin.String#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-logger/log.md
-$dokka.location:com.chrynan.logger/Logger/verbose/#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-logger/verbose.md
-$dokka.location:com.chrynan.logger/Logger/warning/#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-logger/warning.md
-$dokka.location:com.chrynan.logger/Logger/wtf/#kotlin.String?#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-logger/wtf.md
 $dokka.location:com.chrynan.logger/NSLogger///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-n-s-logger/index.md
 $dokka.location:com.chrynan.logger/NSLogger/NSLogger/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-n-s-logger/-n-s-logger.md
 $dokka.location:com.chrynan.logger/NSLogger/init/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-n-s-logger/init.md
@@ -77,13 +98,15 @@ $dokka.location:com.chrynan.logger/NoActionLogger/NoActionLogger/#/PointingToDec
 $dokka.location:com.chrynan.logger/NoActionLogger/init/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-no-action-logger/init.md
 $dokka.location:com.chrynan.logger/NoActionLogger/isEnabled/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-no-action-logger/is-enabled.md
 $dokka.location:com.chrynan.logger/NoActionLogger/log/#com.chrynan.logger.LogType#kotlin.String#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-no-action-logger/log.md
-$dokka.location:com.chrynan.logger/SimplePrintLineLogger.Companion///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-simple-print-line-logger/-companion/index.md
-$dokka.location:com.chrynan.logger/SimplePrintLineLogger///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-simple-print-line-logger/index.md
-$dokka.location:com.chrynan.logger/SimplePrintLineLogger/SimplePrintLineLogger/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-simple-print-line-logger/-simple-print-line-logger.md
-$dokka.location:com.chrynan.logger/SimplePrintLineLogger/init/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-simple-print-line-logger/init.md
-$dokka.location:com.chrynan.logger/SimplePrintLineLogger/isEnabled/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-simple-print-line-logger/is-enabled.md
-$dokka.location:com.chrynan.logger/SimplePrintLineLogger/log/#com.chrynan.logger.LogType#kotlin.String#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-simple-print-line-logger/log.md
+$dokka.location:com.chrynan.logger/PrintLineLogger.Companion///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-print-line-logger/-companion/index.md
+$dokka.location:com.chrynan.logger/PrintLineLogger///PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-print-line-logger/index.md
+$dokka.location:com.chrynan.logger/PrintLineLogger/PrintLineLogger/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-print-line-logger/-print-line-logger.md
+$dokka.location:com.chrynan.logger/PrintLineLogger/init/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-print-line-logger/init.md
+$dokka.location:com.chrynan.logger/PrintLineLogger/isEnabled/#/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-print-line-logger/is-enabled.md
+$dokka.location:com.chrynan.logger/PrintLineLogger/log/#com.chrynan.logger.LogType#kotlin.String#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/logger-core/logger-core/com.chrynan.logger/-print-line-logger/log.md
 module:logger-android-timber
 com.chrynan.logger.android.timber
 module:logger-core
 com.chrynan.logger
+module:logger-ktor-client
+com.chrynan.logger.ktor.client

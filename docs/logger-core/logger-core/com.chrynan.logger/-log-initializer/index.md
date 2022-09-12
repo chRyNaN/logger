@@ -21,7 +21,7 @@ An interface that initializes an implementation of [Logger](../-logger/index.md)
 | [DelegatingLogger](../-delegating-logger/index.md) |
 | [Log](../-log/index.md) |
 | [NoActionLogger](../-no-action-logger/index.md) |
-| [SimplePrintLineLogger](../-simple-print-line-logger/index.md) |
+| [PrintLineLogger](../-print-line-logger/index.md) |
 | [NSLogger](../-n-s-logger/index.md) |
 | [ConsoleLogger](../-console-logger/index.md) |
 | [JavaAnnotationProcessorMessagerLogger](../-java-annotation-processor-messager-logger/index.md) |
