@@ -9,5 +9,3 @@ interface Loggable {
 
     val logValues: LogValues
 }
-
-fun Logger.log(loggable: Loggable) = log(logValues = loggable.logValues)
